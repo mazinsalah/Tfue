@@ -15,7 +15,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "278659858805555200") return;
+  if (message.author.id !== "616965839983345679") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -44,7 +44,7 @@ if (message.content.startsWith(prefix + 'setavatar')) {
 }
 
 if (message.content.startsWith(prefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/cloakzy");
+  client.user.setGame(argresult, "https://www.twitch.tv/bugha");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
