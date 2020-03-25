@@ -51,6 +51,11 @@ if (message.content.startsWith(prefix + 'setgame')) {
     message.channel.sendMessage(`Playing: **${argresult}`)
 } 
 
+if (message.content.startsWith(prefix + 'setTw')) {
+  client.user.setGame(argresult, "https://www.esportspedia.com/streamers/thumb.php?f=Clix.jpeg&width=300");
+     console.log('test' + argresult);
+    message.channel.sendMessage(`Streaming: **${argresult}`)
+} 
 
 
 });
